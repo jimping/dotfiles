@@ -150,7 +150,7 @@ echo 'Install laravel envoy'
 echo '---------------------'
 composer global require "laravel/envoy"
 
-ln -s $HOME/.dotfiles/misc/php-limits.ini /opt/homebrew/etc/php/8.3/conf.d/php-z-custom-limits.ini
+ln -s $HOME/.dotfiles/misc/php-limits.ini /opt/homebrew/etc/php/8.4/conf.d/php-z-custom-limits.ini
 
 echo 'Install mariadb'
 echo '-------------'
