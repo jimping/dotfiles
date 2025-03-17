@@ -34,8 +34,8 @@ alias gnf="git checkout -b feature/"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # Docker
-alias dc="docker-compose"
-alias dcu="docker-compose up -d"
+alias dc="docker compose"
+alias dcu="docker compose up -d"
 
 # Fast open
 alias o="open ."

@@ -68,7 +68,6 @@ export PATH="$PATH:$NPM_PACKAGES/bin"
 export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
 export PATH=$HOME/.dotfiles/bin:$PATH
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
 # Import ssh keys in keychain
 ssh-add -A 2>/dev/null
@@ -115,3 +114,12 @@ fi
 # Ansible
 export ANSIBLE_VAULT_PASSWORD_FILE=./.vaultpw
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# PHP 8.3
+export PATH=/opt/homebrew/opt/php@8.3/bin:$PATH
+
+# Shopify Hydrogen alias to local projects
+alias h2='$(npm prefix -s)/node_modules/.bin/shopify hydrogen'
+
+# Created by `pipx` on 2025-02-27 10:54:15
+export PATH="$PATH:/Users/jonas/.local/bin"
