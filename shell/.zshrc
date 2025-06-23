@@ -115,11 +115,9 @@ fi
 export ANSIBLE_VAULT_PASSWORD_FILE=./.vaultpw
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-# PHP 8.3
-export PATH=/opt/homebrew/opt/php@8.3/bin:$PATH
-
 # Shopify Hydrogen alias to local projects
 alias h2='$(npm prefix -s)/node_modules/.bin/shopify hydrogen'
 
 # Created by `pipx` on 2025-02-27 10:54:15
 export PATH="$PATH:/Users/jonas/.local/bin"
+export PATH="/usr/local/opt/libpq/bin:$PATH"

@@ -82,10 +82,6 @@ echo 'Install ack'
 echo '-----------'
 brew install ack
 
-echo 'Install wrk'
-echo '-----------'
-brew install wrk
-
 echo 'Install doctl'
 echo '-------------'
 brew install doctl
@@ -131,10 +127,6 @@ echo 'Install imagick'
 echo '---------------'
 pecl install imagick
 
-echo 'Install memcached'
-echo '-----------------'
-pecl install memcached
-
 echo 'Install xdebug'
 echo '--------------'
 pecl install xdebug
@@ -173,7 +165,7 @@ echo 'Install thefuck'
 echo '------------'
 brew install thefuck
 
-echo 'Install thefuck'
+echo 'Install ruby'
 echo '------------'
 brew install ruby
 
@@ -209,11 +201,6 @@ echo 'Install zsh plugins: autosuggestions, autojump'
 echo '---------------------------'
 brew install zsh-autosuggestions autojump
 
-echo 'Install ddev'
-echo '---------------------------'
-brew install drud/ddev/ddev
-mkcert -install
-
 echo 'Install cocoapods'
 echo '--------------'
 sudo gem install cocoapods
@@ -227,17 +214,9 @@ echo 'Install packer'
 echo '--------------'
 brew install hashicorp/tap/packer
 
-echo 'Install ansible'
-echo '--------------'
-brew install ansible
-
-echo 'Install Vue CLI'
-echo '--------------'
-yarn global add @vue/cli-init
-
 echo 'Install Google Fonts'
 echo '--------------'
-cd ~/Library/Fonts/ && git clone https://github.com/google/fonts.git google-fonts && cd -
+cd ~/Library/Fonts/ && rm -rf google-fonts && git clone https://github.com/google/fonts.git google-fonts && cd -
 
 echo 'Install PHPCS'
 echo '--------------'
