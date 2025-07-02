@@ -104,3 +104,6 @@ alias kuc="kubectl config use-context"
 
 # Global updates
 alias update="composer global update && npm update -g && brew update && brew upgrade && brew cleanup && brew doctor"
+
+# Scripts
+alias seo-files="~/.dotfiles/scripts/seo-files.sh"
