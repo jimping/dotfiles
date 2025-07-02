@@ -40,11 +40,28 @@ rename_files_recursive() {
         local basename=$(basename "$file")
         local extension=""
         local filename_without_ext="$basename"
+        local heic_conversion_needed=false
 
         # Extract extension if present
         if [[ "$basename" == *.* ]]; then
-            extension=".${basename##*.}"
+            extension="${basename##*.}"
             filename_without_ext="${basename%.*}"
+
+            # Convert extension to lowercase
+            extension=$(echo "$extension" | tr '[:upper:]' '[:lower:]')
+
+            # Convert jpeg to jpg
+            if [[ "$extension" == "jpeg" ]]; then
+                extension="jpg"
+            fi
+
+            # Convert HEIC to JPG using ImageMagick convert command
+            if [[ "$extension" == "heic" ]]; then
+                extension="jpg"
+                local heic_conversion_needed=true
+            fi
+
+            extension=".$extension"
         fi
 
         # Convert filename to URL-safe
@@ -68,8 +85,31 @@ rename_files_recursive() {
             new_path="$temp_new_path"
             new_basename=$(basename "$new_path")
 
-            echo "Renaming file: '$basename' -> '$new_basename'"
-            mv "$file" "$new_path"
+            # Handle HEIC conversion if needed
+            if [[ "$heic_conversion_needed" == true ]]; then
+                echo "Converting HEIC to JPG: '$basename' -> '$new_basename'"
+
+                # Check if convert command is available
+                if ! command -v convert &>/dev/null; then
+                    echo "Warning: ImageMagick 'convert' command not found. Install it with: brew install imagemagick"
+                    echo "Skipping conversion, just renaming: '$basename' -> '$new_basename'"
+                    mv "$file" "$new_path"
+                else
+                    # Convert HEIC to JPG using ImageMagick
+                    if convert "$file" "$new_path"; then
+                        echo "Successfully converted and saved as: '$new_basename'"
+                        # Remove the original HEIC file after successful conversion
+                        rm "$file"
+                    else
+                        echo "Error: Failed to convert '$basename'. Keeping original file."
+                        # If conversion fails, just rename the file
+                        mv "$file" "$new_path"
+                    fi
+                fi
+            else
+                echo "Renaming file: '$basename' -> '$new_basename'"
+                mv "$file" "$new_path"
+            fi
         fi
     done
 
