@@ -201,10 +201,6 @@ echo 'Install zsh plugins: autosuggestions, autojump'
 echo '---------------------------'
 brew install zsh-autosuggestions autojump
 
-echo 'Install cocoapods'
-echo '--------------'
-sudo gem install cocoapods
-
 echo 'Install terraform'
 echo '--------------'
 brew tap hashicorp/tap

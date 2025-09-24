@@ -107,3 +107,7 @@ alias update="composer global update && npm update -g && brew update && brew upg
 
 # Scripts
 alias seo-files="~/.dotfiles/scripts/seo-files.sh"
+
+# Find
+alias fif="find $1 -name $2 -type f"
+alias fif2="echo $1 $2"
