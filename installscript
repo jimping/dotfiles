@@ -94,6 +94,10 @@ echo 'Install image converters'
 echo '-------------'
 brew install jpegoptim optipng pngquant svgo gifsicle webp cairo pango libpng jpeg giflib librsvg
 
+echo 'Install rust'
+echo '-------------'
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+
 # echo 'Install some nice quicklook plugins'
 # echo '-----------------------------------'
 # brew install --cask --force qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip WebPQuickLook suspicious-package
