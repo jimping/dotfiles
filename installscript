@@ -146,7 +146,8 @@ echo 'Install laravel envoy'
 echo '---------------------'
 composer global require "laravel/envoy"
 
-ln -s $HOME/.dotfiles/misc/php-limits.ini /opt/homebrew/etc/php/8.4/conf.d/php-z-custom-limits.ini
+mkdir -p /opt/homebrew/etc/php/8.5/conf.d
+ln -sfn $HOME/.dotfiles/misc/php-limits.ini /opt/homebrew/etc/php/8.5/conf.d/php-z-custom-limits.ini
 
 echo 'Install mariadb'
 echo '-------------'
@@ -217,6 +218,11 @@ brew install hashicorp/tap/packer
 echo 'Install Google Fonts'
 echo '--------------'
 cd ~/Library/Fonts/ && rm -rf google-fonts && git clone https://github.com/google/fonts.git google-fonts && cd -
+
+echo 'Install herdr + herdr-radar (iTerm font)'
+echo '---------------------------------------'
+chmod +x "$HOME/.dotfiles/scripts/setup-herdr.sh"
+"$HOME/.dotfiles/scripts/setup-herdr.sh"
 
 echo 'Install PHPCS'
 echo '--------------'

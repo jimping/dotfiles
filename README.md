@@ -1,6 +1,6 @@
 # My personal dotfiles
 
-My personal dotfiles for an Mac with M1 Chip.
+My personal dotfiles for a Mac with Apple Silicon.
 
 It contains the installation of some basic tools, some handy aliases and functions. Backups of settings are done via [Mackup](https://github.com/lra/mackup).
 
@@ -17,6 +17,24 @@ The bootstrap script can be run by cd-ing into the `.dotfiles` directory and per
 ```bash
 ./bootstrap
 ```
+
+## Herdr + Radar (iTerm2)
+
+`installscript` runs `scripts/setup-herdr.sh`, which:
+
+1. Installs [Herdr](https://herdr.dev) into `~/.local/bin`
+2. Installs the [herdr-radar](https://github.com/hhdebb/herdr-radar) plugin
+3. Runs radar `configure` + `install-font`
+4. Installs `JetBrainsMonoHerdr-Regular.ttf` into `~/Library/Fonts` (required for iTerm sidebar icons)
+5. Sets iTerm2 profile font to `JetBrainsMonoHerdr-Regular 13` (dotfiles plist + `~/Documents/Work/iTerm` when present)
+
+Re-run anytime:
+
+```bash
+~/.dotfiles/scripts/setup-herdr.sh
+```
+
+Open a **new** iTerm2 window after changing the font. Secrets and machine-local env go in `~/.dotfiles-custom/shell/` (already sourced by `.zshrc`).
 
 Feel free to create an issue on this repo if you have any questions about them.
 

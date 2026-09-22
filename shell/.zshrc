@@ -81,6 +81,10 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Enable autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
+# Android SDK
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator
+
 # Extra paths
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
@@ -107,17 +111,27 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
     export PATH=$(gem environment gemdir)/bin:$PATH
 fi
 
-if [ -d "$HOME/flutter/bin" ]; then
-    export PATH="$HOME/flutter/bin:$PATH"
-fi
-
 # Ansible
-export ANSIBLE_VAULT_PASSWORD_FILE=./.vaultpw
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-# Shopify Hydrogen alias to local projects
-alias h2='$(npm prefix -s)/node_modules/.bin/shopify hydrogen'
-
 # Created by `pipx` on 2025-02-27 10:54:15
-export PATH="$PATH:/Users/jonas/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
+
+# opencode + herdr (install.sh default)
+export PATH="$HOME/.opencode/bin:$PATH"
+
+# Docker Desktop CLI completions
+if [ -d "$HOME/.docker/completions" ]; then
+  fpath=("$HOME/.docker/completions" $fpath)
+  autoload -Uz compinit
+  compinit
+fi
+
+# direnv
+command -v direnv >/dev/null && eval "$(direnv hook zsh)"
+
+# herdr shell completions (after herdr is installed)
+if command -v herdr >/dev/null 2>&1; then
+  eval "$(herdr completion zsh)"
+fi
