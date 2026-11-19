@@ -133,6 +133,3 @@ command -v direnv >/dev/null && eval "$(direnv hook zsh)"
 if command -v herdr >/dev/null 2>&1; then
   eval "$(herdr completion zsh)"
 fi
-
-# Lokale Einstellungen und Secrets (nicht im Repo)
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local
