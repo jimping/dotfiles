@@ -97,8 +97,8 @@ brew "php-code-sniffer"
 brew "php"
 # PHP 8.4 nur parallel, nicht verlinkt (keg-only)
 brew "php@8.4", link: false
-# Execute binaries from Python packages in isolated environments
-brew "pipx"
+# Python-Paket- und Projektmanager, ersetzt pipx (uv tool install)
+brew "uv"
 # PNG image optimizing utility
 brew "pngquant"
 # PDF rendering library (based on the xpdf-3.0 code base)
@@ -189,7 +189,6 @@ cask "slack"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
 # Nicht per brew installiert, aber auf diesem Mac vorhanden
-cask "adobe-creative-cloud"
 cask "cursor"
 cask "docker-desktop"
 cask "lens"

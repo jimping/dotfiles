@@ -62,6 +62,10 @@ echo '-------------------------------------------------------'
 # mas braucht eine Anmeldung im App Store, sonst schlagen die mas-Einträge fehl
 brew bundle --file=$HOME/.dotfiles/Brewfile
 
+echo 'Install Python tools (uv)'
+echo '-------------------------'
+uv tool install ptpython
+
 echo 'Install rust'
 echo '-------------'
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh

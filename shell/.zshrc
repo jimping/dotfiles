@@ -104,7 +104,7 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
     export PATH=$(gem environment gemdir)/bin:$PATH
 fi
 
-# Created by `pipx` on 2025-02-27 10:54:15
+# uv tools und andere Nutzer-Binaries
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 
