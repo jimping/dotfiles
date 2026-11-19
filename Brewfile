@@ -125,10 +125,6 @@ brew "sdl2_ttf"
 brew "svgo"
 # User interface to the TELNET protocol
 brew "telnet"
-# CLI tool to generate terraform files from existing infrastructure
-brew "terraformer"
-# Thin wrapper for Terraform e.g. for locking state
-brew "terragrunt"
 # Watch files and take action when they change
 brew "watchman"
 # Internet file retriever
