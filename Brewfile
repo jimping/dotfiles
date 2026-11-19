@@ -13,8 +13,6 @@ tap "symfony-cli/tap", trusted: true
 brew "ack"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
-# Shell extension to jump to frequently used directories
-brew "autojump"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Switch Apache / Valet / CLI configs between PHP versions
@@ -131,8 +129,6 @@ brew "telnet"
 brew "terraformer"
 # Thin wrapper for Terraform e.g. for locking state
 brew "terragrunt"
-# Programmatically correct mistyped console commands
-brew "thefuck"
 # Watch files and take action when they change
 brew "watchman"
 # Internet file retriever
