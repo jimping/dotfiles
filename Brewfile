@@ -95,10 +95,10 @@ brew "nginx"
 brew "optipng"
 # Check coding standards in PHP, JavaScript and CSS
 brew "php-code-sniffer"
-# General-purpose scripting language (aktuelle Version, für pecl und composer)
+# PHP 8.5, Standardversion (php im PATH, pecl, composer)
 brew "php"
-# PHP 8.4 parallel zur aktuellen Version
-brew "php@8.4"
+# PHP 8.4 nur parallel, nicht verlinkt (keg-only)
+brew "php@8.4", link: false
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # PNG image optimizing utility
@@ -192,8 +192,6 @@ cask "ray"
 cask "slack"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
-# Wine wrapper built with SwiftUI
-cask "whisky"
 # Nicht per brew installiert, aber auf diesem Mac vorhanden
 cask "adobe-creative-cloud"
 cask "cursor"
