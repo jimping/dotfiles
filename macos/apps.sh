@@ -20,7 +20,6 @@ brew install --cask docker
 # brew install --cask dropbox
 brew install --cask google-chrome
 brew install --cask iterm2
-brew install --cask postman
 brew install --cask anydesk
 # brew install --cask termhere
 # brew install --cask little-snitch

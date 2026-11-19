@@ -97,8 +97,6 @@ export GID=$(id -g)
 
 if which rbenv >/dev/null; then eval "$(rbenv init -)"; fi
 
-# Alias hub to git
-eval "$(hub alias -s)"
 eval $(thefuck --alias)
 
 export NVM_DIR="$HOME/.nvm"
