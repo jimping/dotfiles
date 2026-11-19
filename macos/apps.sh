@@ -15,7 +15,6 @@ mas install 409203825  # Numbers
 mas install 497799835  # xCode
 # mas install 1278508951 # Trello
 
-brew install --cask babeledit
 brew install --cask visual-studio-code
 brew install --cask docker
 # brew install --cask dropbox
@@ -23,7 +22,6 @@ brew install --cask google-chrome
 brew install --cask iterm2
 brew install --cask postman
 brew install --cask anydesk
-brew install --cask tunnelblick
 # brew install --cask termhere
 # brew install --cask little-snitch
 brew install --cask imageoptim
