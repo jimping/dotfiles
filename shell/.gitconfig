@@ -1,0 +1,17 @@
+[user]
+	name = Jonas Imping
+	email = j.imping@splintnet.de
+[init]
+	defaultBranch = main
+[push]
+	default = current
+[core]
+	excludesfile = ~/.global-gitignore
+	autocrlf = input
+[pull]
+	rebase = false
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

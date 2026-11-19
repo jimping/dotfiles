@@ -130,3 +130,6 @@ command -v direnv >/dev/null && eval "$(direnv hook zsh)"
 if command -v herdr >/dev/null 2>&1; then
   eval "$(herdr completion zsh)"
 fi
+
+# Unity CLI
+if [ -f "/Users/jonas/.unity/env" ]; then . "/Users/jonas/.unity/env"; fi
