@@ -151,8 +151,6 @@ cask "google-chrome"
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# App to write, plan, collaborate, and get organised
-cask "notion"
 # Desktop virtualization software
 cask "parallels"
 # Team communication and collaboration software
