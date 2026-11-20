@@ -56,8 +56,6 @@ brew "jpeg"
 brew "jpegoptim"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Tool to move from `docker-compose` to Kubernetes
-brew "kompose"
 # Sophisticated file transfer program
 brew "lftp"
 # Library to communicate with iOS devices natively
@@ -141,8 +139,6 @@ brew "stripe/stripe-cli/stripe"
 cask "1password-cli"
 # Allows connection to a computer remotely
 cask "anydesk"
-# Manage team projects and tasks
-cask "asana"
 # A fast, cross-platform build tool inspired by Make, designed for modern workflows.
 cask "go-task/tap/go-task", trusted: true
 # Web browser
@@ -170,7 +166,6 @@ mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "ColorSlurp", id: 1287239339
 mas "Developer", id: 640199958
-mas "FastestVPN", id: 1643144565
 mas "Final Cut Pro", id: 424389933
 mas "iMovie", id: 408981434
 mas "iStat Menus", id: 1319778037
@@ -180,7 +175,6 @@ mas "Numbers", id: 361304891
 mas "Pages", id: 361309726
 mas "Sequel Ace", id: 1518036000
 mas "Speedtest", id: 1153157709
-mas "Telegram", id: 747648890
 mas "Telephone", id: 406825478
 mas "TestFlight", id: 899247664
 mas "The Unarchiver", id: 425424353
@@ -189,7 +183,6 @@ mas "WhatsApp", id: 310633997
 mas "Xcode", id: 497799835
 npm "@google/gemini-cli"
 npm "@playwright/mcp"
-npm "brainy"
 npm "cloc"
 npm "corepack"
 npm "eas-cli"
@@ -199,4 +192,3 @@ npm "google-indexing-script"
 npm "js-yaml"
 npm "localtunnel"
 npm "npm-check-updates"
-npm "vercel"
