@@ -15,12 +15,8 @@ brew "ack"
 brew "argocd"
 # Official Amazon AWS command-line interface
 brew "awscli"
-# Switch Apache / Valet / CLI configs between PHP versions
-brew "brew-php-switcher"
 # Tool for emulating mouse and keyboard events
 brew "cliclick"
-# Cloudflare Tunnel client (formerly Argo Tunnel)
-brew "cloudflared"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
 # GNU File, Shell, and Text utilities
@@ -29,8 +25,6 @@ brew "coreutils"
 brew "croc"
 # Load/unload environment variables based on $PWD
 brew "direnv"
-# Lightweight DNS forwarder and DHCP server
-brew "dnsmasq"
 # Command-line tool for DigitalOcean
 brew "doctl"
 # Easiest way to build and release mobile apps
@@ -77,26 +71,18 @@ brew "libraw"
 brew "librsvg"
 # Keep your Mac's application settings in sync
 brew "mackup"
-# Web and API based SMTP testing
-brew "mailpit", restart_service: :changed
-# Drop-in replacement for MySQL
-brew "mariadb", restart_service: :changed, pin: true
 # Mac App Store command-line interface
 brew "mas"
 # Run a Kubernetes cluster locally
 brew "minikube"
 # NCurses Disk Usage
 brew "ncdu"
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
 # PNG file optimizer
 brew "optipng"
 # Check coding standards in PHP, JavaScript and CSS
 brew "php-code-sniffer"
 # PHP 8.5, Standardversion (php im PATH, pecl, composer)
 brew "php"
-# PHP 8.4 nur parallel, nicht verlinkt (keg-only)
-brew "php@8.4", link: false
 # Python-Paket- und Projektmanager, ersetzt pipx (uv tool install)
 brew "uv"
 # PNG image optimizing utility
@@ -111,8 +97,6 @@ brew "pwgen"
 brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
-# Persistent key-value database, with built-in net interface
-brew "redis", restart_service: :changed
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Library for loading images as SDL surfaces and textures
@@ -168,8 +152,6 @@ cask "asana"
 cask "go-task/tap/go-task", trusted: true
 # Web browser
 cask "google-chrome"
-# Laravel and PHP development environment manager
-cask "herd"
 # Tool to optimise images to a smaller size
 cask "imageoptim"
 # Terminal emulator as alternative to Apple's Terminal app

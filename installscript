@@ -83,11 +83,10 @@ php composer-setup.php
 rm composer-setup.php
 sudo mv composer.phar /usr/local/bin/composer
 
-echo 'Install imagick, xdebug, redis (pecl)'
-echo '-------------------------------------'
+echo 'Install imagick, xdebug (pecl)'
+echo '------------------------------'
 pecl install imagick
 pecl install xdebug
-pecl install redis
 
 echo 'Set right composer path'
 export PATH="$HOME/.composer/vendor/bin:$PATH"
@@ -100,10 +99,6 @@ composer global require "laravel/envoy"
 PHP_VERSION="$(php -r 'echo PHP_MAJOR_VERSION.".".PHP_MINOR_VERSION;')"
 mkdir -p /opt/homebrew/etc/php/$PHP_VERSION/conf.d
 ln -sfn $HOME/.dotfiles/misc/php-limits.ini /opt/homebrew/etc/php/$PHP_VERSION/conf.d/php-z-custom-limits.ini
-
-# MariaDB-Konfiguration (Dienste startet brew bundle)
-mkdir -p /opt/homebrew/etc/my.cnf.d
-ln -sfn $HOME/.dotfiles/misc/my.cnf /opt/homebrew/etc/my.cnf.d/custom.cnf
 
 echo 'Install Google Fonts'
 echo '--------------'
