@@ -1,5 +1,4 @@
 tap "bro3886/tap", "https://github.com/BRO3886/homebrew-tap"
-tap "ddev/ddev", trusted: true
 tap "derailed/k9s", trusted: true
 tap "getsentry/xcodebuildmcp"
 tap "go-task/tap", trusted: true
@@ -118,8 +117,6 @@ brew "xcodegen"
 brew "zsh-autosuggestions"
 # Fast, native macOS Calendar CLI built on go-eventkit
 brew "bro3886/tap/ical", trusted: true
-# DDEV
-brew "ddev/ddev/ddev", trusted: true
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
 # Model Context Protocol server for Xcode project workflows
