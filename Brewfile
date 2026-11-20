@@ -8,7 +8,6 @@ tap "hudochenkov/sshpass", trusted: true
 tap "robscott/tap", trusted: true
 tap "shopify/shopify"
 tap "stripe/stripe-cli", trusted: true
-tap "symfony-cli/tap", trusted: true
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # GitOps Continuous Delivery for Kubernetes
@@ -140,8 +139,6 @@ brew "robscott/tap/kube-capacity"
 brew "shopify/shopify/shopify-cli", trusted: true
 # Stripe CLI utility
 brew "stripe/stripe-cli/stripe"
-# Symfony CLI helps Symfony developers manage projects, from local code to remote infrastructure
-brew "symfony-cli/tap/symfony-cli"
 # Command-line interface for 1Password
 cask "1password-cli"
 # Allows connection to a computer remotely
