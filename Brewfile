@@ -159,6 +159,8 @@ cask "parallels"
 cask "ray"
 # Team communication and collaboration software
 cask "slack"
+# Control your Sonos system
+cask "sonos"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
 # Nicht per brew installiert, aber auf diesem Mac vorhanden
