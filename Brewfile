@@ -40,8 +40,6 @@ brew "git-filter-repo"
 brew "git-lfs"
 # Task is a task runner/build tool that aims to be simpler and easier to use
 brew "go-task", link: false
-# GNU troff text-formatting system
-brew "groff"
 # Command-line interface for Hetzner Cloud
 brew "hcloud"
 # Deploy Kubernetes Helm Charts
