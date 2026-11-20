@@ -155,8 +155,6 @@ cask "iterm2"
 cask "notion"
 # Desktop virtualization software
 cask "parallels"
-# Debug with Ray to fix problems faster
-cask "ray"
 # Team communication and collaboration software
 cask "slack"
 # Control your Sonos system
