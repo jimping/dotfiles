@@ -108,7 +108,7 @@ fi
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 
-# opencode + herdr (install.sh default)
+# opencode
 export PATH="$HOME/.opencode/bin:$PATH"
 
 # Docker Desktop CLI completions
@@ -120,11 +120,6 @@ fi
 
 # direnv
 command -v direnv >/dev/null && eval "$(direnv hook zsh)"
-
-# herdr shell completions (after herdr is installed)
-if command -v herdr >/dev/null 2>&1; then
-  eval "$(herdr completion zsh)"
-fi
 
 # Unity CLI
 if [ -f "/Users/jonas/.unity/env" ]; then . "/Users/jonas/.unity/env"; fi

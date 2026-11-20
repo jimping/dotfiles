@@ -104,11 +104,6 @@ echo 'Install Google Fonts'
 echo '--------------'
 cd ~/Library/Fonts/ && rm -rf google-fonts && git clone https://github.com/google/fonts.git google-fonts && cd -
 
-echo 'Install herdr + herdr-radar (iTerm font)'
-echo '---------------------------------------'
-chmod +x "$HOME/.dotfiles/scripts/setup-herdr.sh"
-"$HOME/.dotfiles/scripts/setup-herdr.sh"
-
 echo 'Configure PHPCS'
 echo '--------------'
 phpcs --config-set installed_paths ~/.dotfiles/phpcs
